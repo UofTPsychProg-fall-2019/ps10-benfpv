@@ -105,11 +105,11 @@ ggsave('figures/Q4.pdf',units='in',width=4,height=5)
 
 # use dplyr functions to calculate the mean of each personality trait for each combination of gender, BMI group
 ipip.g <- ipip.l 
-    summarise(ipip.l, trait, value=mean(value)) #does not work!!!!
+    summarise(ipip.l, trait, value=mean(value)) #does not work!!!
 
 # plot the average value of personality trait (colored as separate lines), according to the BMI category
 # facet_warp gender so that you can see these relationships separately for females and males
 Q5 <- ggplot()
 Q5
-ggsave('figures/Q5.pdf',units='in',width=4,height=5)
+ggsave('figures/Q5.pdf',units='in',width=4,height=5) #does not work!!!
     
